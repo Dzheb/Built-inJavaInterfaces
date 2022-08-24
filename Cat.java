@@ -51,24 +51,22 @@ public class Cat extends Breed implements Comparable<Cat>, Iterator<String> {
     public String next() {
         switch (index) {
             case 1:
-                //return кличка;
+                // return кличка;
                 return String.format("Кличка: %s", nickName);
             case 2:
-                //return Порода;
+                // return Порода;
                 return String.format("Порода: %s", breed);
             case 3:
-                //return Возраст;
+                // return Возраст;
                 return String.format("Возраст: %d", age);
             case 4:
-                //return цвет;
+                // return цвет;
                 return String.format("Цвет: %d", color);
             default:
-                //return вес;
+                // return вес;
                 return String.format("Вес: %d", weight);
 
         }
     }
-
-
 
 }

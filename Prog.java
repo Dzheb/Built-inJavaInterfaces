@@ -4,15 +4,15 @@ import java.util.Iterator;
 public class Prog {
 
   public static void main(String[] args) {
-    
+
     // Создание имён котиков
     var cn = PetNames.getCatNames();
-        // Использование встроенного интерфейса итератора
-        Iterator<String> cnIterator = cn.iterator();
-        System.out.println("Возможные имена котиков:");
-        while (cnIterator.hasNext()) {
-          System.out.println(cnIterator.next());
-        }
+    // Использование встроенного интерфейса итератора
+    Iterator<String> cnIterator = cn.iterator();
+    System.out.println("Возможные имена котиков:");
+    while (cnIterator.hasNext()) {
+      System.out.println(cnIterator.next());
+    }
     // Создание репозитория котиков
     ArrayList<Cat> repoC = new ArrayList<>();
     repoCats fillCats = new repoCats(7, repoC);
@@ -25,28 +25,27 @@ public class Prog {
     for (Cat t : repoC) {
       System.out.println(t);
     }
-    
-  
-  // Создание имён собачек
-  var dn = PetNames.getDogNames();
-  // Использование встроенного интерфейса итератора
-  Iterator<String> dnIterator = dn.iterator();
-  System.out.println("Возможные имена собачек:");
-  while (dnIterator.hasNext()) {
-    System.out.println(dnIterator.next());
-  }
-// Создание репозитория собачек
-ArrayList<Dog> repoD = new ArrayList<>();
-repoDogs fillDogs = new repoDogs(7, repoD);
-fillDogs.initDogs();
-System.out.println("\nКоманда собачек:");
-System.out.println(repoC);
-// Сортировка собачек по возрасту
-System.out.println("\nСортировка собачек по возрасту");
-repoC.sort((t1, t2) -> Integer.compare(t1.age, t2.age));
-for (Dog t : repoD) {
-System.out.println(t);
-}
+
+    // Создание имён собачек
+    var dn = PetNames.getDogNames();
+    // Использование встроенного интерфейса итератора
+    Iterator<String> dnIterator = dn.iterator();
+    System.out.println("Возможные имена собачек:");
+    while (dnIterator.hasNext()) {
+      System.out.println(dnIterator.next());
+    }
+    // Создание репозитория собачек
+    ArrayList<Dog> repoD = new ArrayList<>();
+    repoDogs fillDogs = new repoDogs(7, repoD);
+    fillDogs.initDogs();
+    System.out.println("\nКоманда собачек:");
+    System.out.println(repoC);
+    // Сортировка собачек по возрасту
+    System.out.println("\nСортировка собачек по возрасту");
+    repoC.sort((t1, t2) -> Integer.compare(t1.age, t2.age));
+    for (Dog t : repoD) {
+      System.out.println(t);
+    }
 
   }
 }
