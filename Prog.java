@@ -15,7 +15,7 @@ public class Prog {
     }
     // Создание репозитория котиков
     ArrayList<Cat> repoC = new ArrayList<>();
-    repoCats fillCats = new repoCats(7, repoC);
+    RepoCats fillCats = new RepoCats(7, repoC);
     fillCats.initCats();
     System.out.println("\nКоманда котиков");
     System.out.println(repoC);
