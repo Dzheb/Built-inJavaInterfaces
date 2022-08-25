@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
-public abstract class PetNames {
+public class PetNames {
+  private PetNames() {
+  }
+
   public static ArrayList<String> getCatNames() {
     ArrayList<String> catNames = new ArrayList<>();
     catNames.add("Барсик");
