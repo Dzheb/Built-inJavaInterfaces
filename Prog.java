@@ -21,7 +21,7 @@ public class Prog {
     System.out.println(repoC);
     // Сортировка котиков по весу
     System.out.println("\nСортировка котиков по весу");
-    repoC.sort((t1, t2) -> Integer.compare(t1.weight, t2.weight));
+    repoC.sort((t1, t2) -> Integer.compare(t1.getWeight(), t2.getWeight()));
     for (Cat t : repoC) {
       System.out.println(t);
     }
@@ -42,7 +42,7 @@ public class Prog {
     System.out.println(repoC);
     // Сортировка собачек по возрасту
     System.out.println("\nСортировка собачек по возрасту");
-    repoC.sort((t1, t2) -> Integer.compare(t1.age, t2.age));
+    repoC.sort((t1, t2) -> Integer.compare(t1.getAge(), t2.getAge()));
     for (Dog t : repoD) {
       System.out.println(t);
     }

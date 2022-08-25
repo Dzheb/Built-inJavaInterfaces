@@ -1,9 +1,5 @@
 public abstract class Breed {
     // Наименование породы
-    public void name() {
-
-    }
-
     // Породы котиков
     public enum CatBreed {
         RUSSIAN("Русская"), ENGLISH("Английская"), SIAM("Сиамская"), ANGOR("Ангорская");

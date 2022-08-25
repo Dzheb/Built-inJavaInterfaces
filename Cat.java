@@ -2,11 +2,11 @@ import java.util.Iterator;
 
 // Использование встроенного интерфейса Comparable
 public class Cat extends Breed implements Comparable<Cat>, Iterator<String> {
-    public String nickName;
-    public String breed;
-    public String color;
-    public int age;
-    public int weight;
+    private String nickName;
+    private String breed;
+    private String color;
+    private int age;
+    private int weight;
 
     public Cat(String nickName,
             String breed,
@@ -23,6 +23,14 @@ public class Cat extends Breed implements Comparable<Cat>, Iterator<String> {
 
     public String catName() {
         return String.format("%s", nickName);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
     @Override

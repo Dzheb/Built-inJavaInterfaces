@@ -1,10 +1,10 @@
 // Использование встроенного интерфейса Comparable
 public class Dog extends Breed implements Comparable<Dog> {
-    public String nickName;
-    public String breed;
-    public String color;
-    public int age;
-    public int weight;
+    private String nickName;
+    private String breed;
+    private String color;
+    private int age;
+    private int weight;
 
     public Dog(String nickName,
             String breed,
