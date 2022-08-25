@@ -14,8 +14,8 @@ public class repoDogs {
   public ArrayList<Dog> initDogs() {
     Random r = new Random();
     for (int i = 0; i < num; i++) {
-      this.dogRepo.add(new Dog(PetNames.getDogNames().get(i % 4), Dog.dogBreed.getDogBreed(i % 4),
-          Breed.petColor.getPetColor(i % 4), 3 + i, r.nextInt(3, 18)));
+      this.dogRepo.add(new Dog(PetNames.getDogNames().get(i % 4), Dog.DogBreed.getDogBreed(i % 4),
+          Colors.PetColor.getPetColor(i % 4), 3 + i, r.nextInt(3, 18)));
     }
     return dogRepo;
   }

@@ -5,74 +5,50 @@ public abstract class Breed {
     }
 
     // Породы котиков
-    public enum catBreed {
+    public enum CatBreed {
         RUSSIAN("Русская"), ENGLISH("Английская"), SIAM("Сиамская"), ANGOR("Ангорская");
 
         private String code;
 
-        catBreed(String code) {
+        CatBreed(String code) {
             this.code = code;
         }
 
         public static String getCatBreed(int i) {
             switch (i) {
                 case 0:
-                    return catBreed.RUSSIAN.code;
+                    return CatBreed.RUSSIAN.code;
                 case 1:
-                    return catBreed.ENGLISH.code;
+                    return CatBreed.ENGLISH.code;
                 case 2:
-                    return catBreed.SIAM.code;
+                    return CatBreed.SIAM.code;
                 default:
-                    return catBreed.ANGOR.code;
+                    return CatBreed.ANGOR.code;
             }
         }
     }
 
-    public enum dogBreed {
+    public enum DogBreed {
         SETTER("Сеттер"), BULLDOG("Бульдог"), TERRIER("Терьер"), HUNTER("Охотничья");
 
         private String code;
 
-        dogBreed(String code) {
+        DogBreed(String code) {
             this.code = code;
         }
 
         public static String getDogBreed(int i) {
             switch (i) {
                 case 0:
-                    return dogBreed.SETTER.code;
+                    return DogBreed.SETTER.code;
                 case 1:
-                    return dogBreed.BULLDOG.code;
+                    return DogBreed.BULLDOG.code;
                 case 2:
-                    return dogBreed.TERRIER.code;
+                    return DogBreed.TERRIER.code;
                 default:
-                    return dogBreed.HUNTER.code;
+                    return DogBreed.HUNTER.code;
             }
 
-        }
-    }
-
-    // Цвета
-    public enum petColor {
-        BLACK("Чёрный"), WHITE("Белый"), GRAY("Серый"), BROWN("Коричневый");
-
-        private String code;
-
-        petColor(String code) {
-            this.code = code;
-        }
-
-        public static String getPetColor(int i) {
-            switch (i) {
-                case 0:
-                    return petColor.BLACK.code;
-                case 1:
-                    return petColor.WHITE.code;
-                case 2:
-                    return petColor.GRAY.code;
-                default:
-                    return petColor.BROWN.code;
-            }
         }
     }
 
