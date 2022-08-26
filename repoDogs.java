@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class repoDogs {
+public class RepoDogs {
   int num;
   ArrayList<Dog> dogRepo;
 
-  public repoDogs(int num, ArrayList<Dog> repo) {
+  public RepoDogs(int num, ArrayList<Dog> repo) {
     this.num = num;
     this.dogRepo = repo;
   }

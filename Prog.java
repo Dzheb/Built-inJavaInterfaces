@@ -36,7 +36,7 @@ public class Prog {
     }
     // Создание репозитория собачек
     ArrayList<Dog> repoD = new ArrayList<>();
-    repoDogs fillDogs = new repoDogs(7, repoD);
+    RepoDogs fillDogs = new RepoDogs(7, repoD);
     fillDogs.initDogs();
     System.out.println("\nКоманда собачек:");
     System.out.println(repoC);
