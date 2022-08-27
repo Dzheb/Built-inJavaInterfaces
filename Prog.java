@@ -46,6 +46,7 @@ public class Prog {
     for (Dog t : repoD) {
       System.out.println(t);
     }
-Cat.Foo();
+// Cat nc = new Cat();
+// nc.Foo();
   }
 }

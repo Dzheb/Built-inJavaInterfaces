@@ -5,6 +5,9 @@ public class Dog extends Breed implements Comparable<Dog> {
     private String color;
     private int age;
     private int weight;
+    public void Foo() {
+        System.out.println("Done");
+    };
 
     public Dog(String nickName,
             String breed,

@@ -1,4 +1,5 @@
 public abstract class Breed {
+    // abstract void Foo();
     // Наименование породы
     // Породы котиков
     public enum CatBreed {
