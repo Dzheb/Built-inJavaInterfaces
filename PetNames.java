@@ -1,24 +1,19 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 public class PetNames {
   private PetNames() {
   }
 
   public static ArrayList<String> getCatNames() {
-    // ArrayList<String> catNames = (ArrayList<String>) List.of("Барсик","Пират","Пушок","Васька");
-    ArrayList<String> catNames = new ArrayList<>();
-    catNames.add("Барсик");
-    catNames.add("Пират");
-    catNames.add("Пушок");
-    catNames.add("Васька");
+    ArrayList<String> catNames = new ArrayList<>(Arrays.asList("Барсик","Пират","Пушок","Васька"));
     return catNames;
   }
 
   public static ArrayList<String> getDogNames() {
-    ArrayList<String> dogNames = new ArrayList<>();
-    dogNames.add("Барбос");
-    dogNames.add("Бобик");
-    dogNames.add("Шарик");
-    dogNames.add("Мухтар");
+    // ArrayList<String> dogNames = new ArrayList<>();
+    ArrayList<String> dogNames = new ArrayList<>(Arrays.asList("Барбос",
+    "Бобик","Шарик","Мухтар"));
     return dogNames;
   }
 

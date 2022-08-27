@@ -7,6 +7,9 @@ public class Cat extends Breed implements Comparable<Cat>, Iterator<String> {
     private String color;
     private int age;
     private int weight;
+    static void Foo(){
+        System.out.println("Done");
+    };
 
     public Cat(String nickName,
             String breed,

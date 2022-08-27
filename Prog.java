@@ -46,6 +46,6 @@ public class Prog {
     for (Dog t : repoD) {
       System.out.println(t);
     }
-
+Cat.Foo();
   }
 }
